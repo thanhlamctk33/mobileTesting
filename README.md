@@ -1,43 +1,66 @@
 # Mobile Automation Framework
 
-## Project Structure
-```
-mobile-automation/
-├── package.json
-├── tsconfig.json
-├── wdio.conf.ts
-├── test/
-│   ├── specs/
-│   │   └── chrome.test.ts
-│   └── testdata/
-│       └── searchData.json
-├── pages/
-│   ├── base.page.ts
-│   ├── chrome.page.ts
-│   ├── google.page.ts
-│   └── elfie.page.ts
-├── utils/
-│   └── helper.ts
-├── apps/
-├── screenshots/
-└── allure-results/
-```
+## Overview
+Mobile automation testing framework using WebdriverIO, TypeScript and Appium for automating Android Chrome browser.
 
-## Setup Instructions
+## Prerequisites
+- Node.js (v14 or higher)
+- Java JDK
+- Android SDK
+- Appium
+- Chrome browser on Android device/emulator
+
+## Setup
 1. Install dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
 
-2. Place Chrome APK in the apps directory
+Configure Android device:
 
-3. Run tests:
-   ```bash
-   npm test
-   ```
 
-4. Generate Allure report:
-   ```bash
-   npm run report
-   ```
-# mobileTesting
+Enable Developer options
+Enable USB debugging
+Install Chrome browser
+
+Project Structure
+Copymobile-automation/
+├── test/
+│   ├── data/             # Test data
+│   │   └── test.data.ts
+│   ├── pages/           # Page objects
+│   │   ├── base.page.ts
+│   │   ├── chrome.page.ts  
+│   │   ├── elfie.page.ts
+│   │   └── google.page.ts
+│   ├── specs/           # Test specs
+│   │   └── elfie.test.ts
+│   └── utils/           # Utilities
+│       ├── helper.ts
+│       └── logger.ts
+├── wdio.conf.js         # WebdriverIO config
+└── tsconfig.json        # TypeScript config
+Running Tests
+Run all tests:
+bashCopynpm test
+Test Cases
+Current test suite includes:
+
+Open Chrome browser
+Navigate to Google
+Search for keywords
+Verify website elements
+Take screenshots for evidence
+
+Libraries Used
+
+WebdriverIO
+TypeScript
+Appium
+Mocha
+Allure Reporter
+
+Resources
+
+WebdriverIO Documentation
+Appium Documentation
+Chrome APK Download
