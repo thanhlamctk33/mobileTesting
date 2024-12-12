@@ -4,63 +4,58 @@
 Mobile automation testing framework using WebdriverIO, TypeScript and Appium for automating Android Chrome browser.
 
 ## Prerequisites
-- Node.js (v14 or higher)
-- Java JDK
-- Android SDK
-- Appium
-- Chrome browser on Android device/emulator
+* Node.js (v14 or higher)
+* Java JDK
+* Android SDK
+* Appium
+* Chrome browser on Android device/emulator
 
 ## Setup
+
 1. Install dependencies:
 ```bash
 npm install
+```
 
-Configure Android device:
-
-
+2. Configure Android device:
 Enable Developer options
 Enable USB debugging
 Install Chrome browser
-
-Project Structure
-Copymobile-automation/
+ 
+ ## Project Structure
+ mobile-automation/
 ├── test/
-│   ├── data/             # Test data
+│   ├── data/           # Test data
 │   │   └── test.data.ts
-│   ├── pages/           # Page objects
+│   ├── pages/         # Page objects
 │   │   ├── base.page.ts
-│   │   ├── chrome.page.ts  
+│   │   ├── chrome.page.ts
 │   │   ├── elfie.page.ts
 │   │   └── google.page.ts
-│   ├── specs/           # Test specs
+│   ├── specs/         # Test specifications
 │   │   └── elfie.test.ts
-│   └── utils/           # Utilities
+│   └── utils/         # Utilities
 │       ├── helper.ts
 │       └── logger.ts
-├── wdio.conf.js         # WebdriverIO config
-└── tsconfig.json        # TypeScript config
-Running Tests
+├── wdio.conf.js       # WebdriverIO config
+└── tsconfig.json      # TypeScript config
+
+## Running Tests
 Run all tests:
-bashCopynpm test
-Test Cases
-Current test suite includes:
+```bash
+npm test
+```
 
-Open Chrome browser
-Navigate to Google
-Search for keywords
-Verify website elements
-Take screenshots for evidence
+## Test Cases
+* Open Chrome browser
+* Navigate to Google
+* Search for keywords
+* Verify website elements
+* Take screenshots for evidence
 
-Libraries Used
-
-WebdriverIO
-TypeScript
-Appium
-Mocha
-Allure Reporter
-
-Resources
-
-WebdriverIO Documentation
-Appium Documentation
-Chrome APK Download
+## Libraries Used
+* WebdriverIO
+* TypeScript
+* Appium
+* Mocha
+* Allure Reporter
