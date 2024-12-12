@@ -1,0 +1,16 @@
+# Tạo file .gitignore
+cat > .gitignore << 'EOL'
+node_modules/
+allure-report/
+allure-results/
+reports/
+screenshots/
+*.log
+npm-debug.log*
+.vscode/
+.idea/
+.env
+.DS_Store
+Thumbs.db
+dist/
+EOL
