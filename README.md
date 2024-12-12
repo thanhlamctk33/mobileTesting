@@ -23,22 +23,22 @@ Enable USB debugging
 Install Chrome browser
  
  ## Project Structure
- mobile-automation/
+└── mobile-automation/
 ├── test/
-│   ├── data/           # Test data
+│   ├── data/                   # Test data
 │   │   └── test.data.ts
-│   ├── pages/         # Page objects
+│   ├── pages/                  # Page objects
 │   │   ├── base.page.ts
 │   │   ├── chrome.page.ts
 │   │   ├── elfie.page.ts
 │   │   └── google.page.ts
-│   ├── specs/         # Test specifications
+│   ├── specs/                  # Test specifications
 │   │   └── elfie.test.ts
-│   └── utils/         # Utilities
+│   └── utils/                  # Utilities
 │       ├── helper.ts
 │       └── logger.ts
-├── wdio.conf.js       # WebdriverIO config
-└── tsconfig.json      # TypeScript config
+├── wdio.conf.js                # WebdriverIO config
+└── tsconfig.json               # TypeScript config
 
 ## Running Tests
 Run all tests:
