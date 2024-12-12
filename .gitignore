@@ -14,3 +14,7 @@ npm-debug.log*
 Thumbs.db
 dist/
 EOL
+chromedriver_mac64.zip
+*.apk
+apps/
+
